@@ -1,6 +1,12 @@
-# RentalDepartment
+# Rental Department
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+
+This project is deploye over heroku server.
+
+Hosted Link : https://rental-equipments.herokuapp.com
+
+Deployment Date : 18 Dec 2020
 
 ## Development server
 

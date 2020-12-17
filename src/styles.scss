@@ -69,7 +69,7 @@ main {
 }
 
 .wrap-box {
-  margin: 4rem 0rem;
+  margin: 1.5rem 0rem;
 }
 .box-container {
   display: flex;
@@ -83,33 +83,35 @@ main {
   height: 12rem;
   border-radius: 9px;
   padding: 0.5rem;
+  padding-bottom: 0px;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow:4px 4px 3px lightgray,-4px -4px 3px lightgrey;
   cursor: pointer;
 }
 
-.card_box p {
+.card_box button {
   background: blue;
   color: var(--light-theme);
   width: 100%;
   padding: 8px;
   text-align: center;
-  cursor: pointer;
   border: 2px solid transparent;
   border-radius: 5px;
   margin-bottom: 0px;
   font-size: 12px;
+  transition: 0.5s;
 }
 
-.card_box p:hover {
-  border: 2px solid black;
+.card_box button:hover {
+  opacity: 0.85;
 }
 
 .welcome_box {
-  height: 85vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,4 +129,20 @@ main {
 .image_cover {
   width: 95%;
   object-fit: cover;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-theme);
+}
+
+.hg_cls {
+  height: 45px;
+}
+
+.user_options.dropdown .dropdown-toggle::after {
+  border-top: 0 !important;
 }

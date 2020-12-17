@@ -1,0 +1,29 @@
+<section>
+  <div class="container">
+    <div class="welcome_box" *ngIf="showWelcomePage">
+      <p><strong>
+        WELCOME TO RENTAL MANAGEMENT SYSTEM
+      </strong></p>
+      <span>
+        Please select location
+      </span>
+    </div>
+    <div class="wrap-box">
+    <p *ngIf="!showWelcomePage">
+      <strong style="cursor: pointer;" (click)="switchToCategorySection()" >Equipment Catlog</strong>
+      <strong *ngIf="!is_category_section"> / {{dataService.subCategoryName}} </strong>
+    </p>
+    <div class="box-container">
+      <div *ngFor="let item of categorie | async">
+        <ng-container *ngIf="item.name != 'NA'">
+          <app-cardbox
+          [cardItem]="item"
+          [imageUrl]="item.image"
+          (selectedSubCategory)="routeToSubCategory($event)">
+        </app-cardbox>
+      </ng-container>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

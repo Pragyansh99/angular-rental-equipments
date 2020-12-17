@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+:root {
+  --primary-color:steelblue;
+  --secondary-color: tan;
+  --dark-theme: #333;
+  --light-theme: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: var(--dark-theme);;
+  color: var(--light-theme);
+}
+
+.bg-light {
+  background-color: var(--light-theme);
+  color: var(--dark-theme);
+}
+main {
+  height: 85vh;
+}
+.margin_cls {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  padding: 20px 35px;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.margin_cls p{
+  margin-bottom: 0px
+}
+
+.manage_margin {
+  margin-left: 24rem;
+}
+
+.link_pointer {
+  cursor: pointer;
+}
+
+.user_options.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.wid100 {
+  width: 100%;
+}
+.re_arrange {
+  top: 0px;
+  left: 1px;
+}
+.re_arrange2 {
+  top: 0px !important;
+  left: 128px !important;
+}
+
+.wrap-box {
+  margin: 4rem 0rem;
+}
+.box-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card_box {
+  border: 2px solid var(--dark-theme);
+  width: 9rem;
+  height: 12rem;
+  border-radius: 9px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card_box p {
+  background: blue;
+  color: var(--light-theme);
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.card_box p:hover {
+  border: 2px solid black;
+}
+
+.welcome_box {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_box {
+  font-size: 18px;
+}
+
+.welcome_box span {
+  font-size: 15px;
+}
+
+.image_cover {
+  width: 95%;
+  object-fit: cover;
+}

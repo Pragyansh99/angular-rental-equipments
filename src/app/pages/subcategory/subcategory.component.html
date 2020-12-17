@@ -1,0 +1,15 @@
+<section>
+  <div class="container">
+    <div class="wrap-box">
+    <p> <strong style="cursor: pointer;" (click)="gotoCategoryPage()">Equipment Catlog</strong> /  <strong> {{dataService.subCategoryName}} </strong> </p>
+    <div class="box-container">
+      <div *ngFor="let item of subCategoryList | async">
+        <app-cardbox
+        [cardItem]="item"
+        [imageUrl]="'../../../assets/category/subcategory/'+item.image"
+        ></app-cardbox>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

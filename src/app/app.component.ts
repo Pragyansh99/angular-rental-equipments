@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataserviceService } from './providers/dataservice.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rental-department';
+
+  constructor(private dataService : DataserviceService) { }
+
+  ngOnInit() { }
+
 }

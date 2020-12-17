@@ -1,0 +1,23 @@
+<header class="bg-dark">
+  <div class="container">
+    <div class="margin_cls">
+      <p>RENTAL MANAGEMENT SYSTEM</p>
+      <div ngbDropdown class="d-inline-block manage_margin">
+        <p class="link_pointer" id="dropdownBasic1" ngbDropdownToggle>Select Category</p>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="re_arrange">
+          <button ngbDropdownItem  *ngFor="let item of dropdownItems">
+            <div ngbDropdown class="d-inline-block user_options wid100">
+              <p class="link_pointer" id="dropdownBasic2" ngbDropdownToggle
+              > {{ item?.name }} </p>
+              <!-- (click)="emitSelection(item.dealers_id, '')" -->
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic2" class="re_arrange2" *ngIf="item.branches.length">
+                <button ngbDropdownItem *ngFor="let branch of item.branches"
+                (click)="emitSelection(item.dealers_id,branch.branch_id)" > {{ branch?.name }} </button>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

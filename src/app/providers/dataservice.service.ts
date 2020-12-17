@@ -44,7 +44,6 @@ export class DataserviceService {
         const categoryList = obj.branches.find((x: any) => { return x.branch_id == data.branch })
         categoryList.categories.map((x: any) => { x.image = '../../../assets/category/' + x.image });
         list = categoryList.categories
-
       }
     } catch (e) {
       list = [];

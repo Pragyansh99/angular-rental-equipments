@@ -78,29 +78,32 @@ main {
 }
 
 .card_box {
-  border: 2px solid var(--dark-theme);
   width: 9rem;
   height: 12rem;
-  border-radius: 9px;
-  padding: 0.5rem;
   padding-bottom: 0px;
-  margin: 0.5rem;
+  margin: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow:4px 4px 3px lightgray,-4px -4px 3px lightgrey;
+  justify-content: flex-end;
+  box-shadow: 6px 0px 5px lightgrey, -6px 0px 5px lightgrey;
+  transition: 0.9s;
+}
+
+.card_box:hover {
   cursor: pointer;
+  box-shadow: 4px 0px 3px lightgrey, -4px 0px 3px lightgrey;
+  transition: 0.9s;
+  transform: scale(0.9);
 }
 
 .card_box button {
-  background: blue;
+  background: #32acf3;
   color: var(--light-theme);
   width: 100%;
   padding: 8px;
   text-align: center;
   border: 2px solid transparent;
-  border-radius: 5px;
   margin-bottom: 0px;
   font-size: 12px;
   transition: 0.5s;
